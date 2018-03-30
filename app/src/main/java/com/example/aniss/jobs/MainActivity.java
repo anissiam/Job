@@ -17,7 +17,9 @@ public class MainActivity extends AppCompatActivity {
             profile.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Toast.makeText(getApplication(),"Profile",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this,
+                            Login_Emp_Activity.class);
+                    startActivity(intent);
                 }
             });
 
