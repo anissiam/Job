@@ -25,7 +25,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".showAllJopsActivity"></activity>
+        <activity android:name=".showAllJopsActivity" />
+        <activity android:name=".Select_comp_emp"></activity>
     </application>
 
 </manifest>
