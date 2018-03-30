@@ -28,7 +28,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:orientation="horizontal">
-
         <Button
             android:id="@+id/camp"
             android:layout_width="match_parent"
