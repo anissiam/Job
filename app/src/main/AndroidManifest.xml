@@ -26,7 +26,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".showAllJopsActivity" />
-        <activity android:name=".Select_comp_emp"></activity>
+        <activity android:name=".Select_comp_emp" />
+        <activity android:name=".Login_Emp_Activity"></activity>
     </application>
 
 </manifest>
