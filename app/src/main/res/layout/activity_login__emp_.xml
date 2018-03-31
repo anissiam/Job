@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent"  tools:context=".MainActivity"
+    android:layout_height="match_parent"  tools:context=".Login_Emp_Activity"
     android:background="#fff">
 
     <View
@@ -46,7 +46,6 @@
         android:id="@+id/textView3"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true" />
-
     <EditText
         android:id="@+id/editText"
         android:layout_width="291dp"
@@ -56,22 +55,21 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="47dp"
-
         android:hint="  Enter User Name"
-        android:textColor="#FFFFFF"
+        android:textColor="#0e2535"
         android:textColorHint="#999999"
-        android:textSize="20sp" />
-
+        android:textSize="20sp"
+        android:inputType="" />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
         android:hint=" Enter User Passwrod"
-
+        android:layout_marginBottom="5dp"
         android:textSize="20sp"
         android:textColorHint="#999999"
-        android:textColor="#FFFFFF"
+        android:textColor="#0e2535"
         android:id="@+id/editText2"
         android:layout_below="@+id/editText"
         android:layout_alignLeft="@+id/editText"
@@ -89,30 +87,16 @@
         android:id="@+id/button3"
         android:layout_below="@+id/editText2"
         android:layout_marginTop="6dp"
+        android:layout_marginBottom="10dp"
         android:layout_alignLeft="@+id/editText2"
         android:layout_alignStart="@+id/editText2"
         android:layout_alignRight="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Android | Lollipop | Material | Yasir | Ameen | Login | Design | Activity | Blog | Facebook | Google | Kitkat | Marshmallow | Google"
-        android:textColor="#FFFFFF"
-        android:alpha="0.6"
-        android:id="@+id/textView4"
-        android:gravity="center_horizontal"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="41dp"
-        android:layout_alignRight="@+id/button3"
-        android:layout_alignEnd="@+id/button3"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3" />
+        android:layout_alignEnd="@+id/editText2"
+        android:onClick="signIn"/>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="292dp"
+        android:layout_width="288dp"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/button3"
         android:layout_alignRight="@+id/button3"
@@ -122,33 +106,41 @@
         android:layout_marginTop="5dp"
         android:layout_toRightOf="@+id/button2"
         android:background="@drawable/google_btn_drawable"
+        android:onClick="signInWithGoogle"
         android:text="SIGN IN WITH GOOGLE"
         android:textColor="@android:color/white"
         android:textSize="20sp" />
-
+    <TextView
+        android:id="@+id/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:text="or Sign up "
+        android:layout_marginTop="5dp"
+        android:textColor="#263694"
+        android:textSize="20dp"
+        android:onClick="signUp"/>
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="40dp"
         android:layout_height="36dp"
-
         android:layout_alignTop="@+id/editText"
         app:srcCompat="@drawable/use" />
-
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="45dp"
         android:layout_height="42dp"
-
         android:layout_below="@+id/editText"
         app:srcCompat="@drawable/password" />
-
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="42dp"
-        android:layout_height="46dp"
+        android:layout_width="34dp"
+        android:layout_height="44dp"
         android:layout_alignTop="@+id/button"
-
-
+        android:layout_marginRight="10dp"
         app:srcCompat="@drawable/google" />
+
+
 
 </RelativeLayout>

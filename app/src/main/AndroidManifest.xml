@@ -27,7 +27,8 @@
         </activity>
         <activity android:name=".showAllJopsActivity" />
         <activity android:name=".Select_comp_emp" />
-        <activity android:name=".Login_Emp_Activity"></activity>
+        <activity android:name=".Login_Emp_Activity" />
+        <activity android:name=".SignUpActivity"></activity>
     </application>
 
 </manifest>
